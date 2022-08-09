@@ -43,7 +43,7 @@ portal:
 
     ## When the ingress is enabled, a host pointing to this will be created
     ##
-    hostname: portal.hyperkuber.local
+    hostname: console.hyperkuber.io
 
     ## Ingress annotations done as key:value pairs
     ## For a full list of possible ingress annotations, please see

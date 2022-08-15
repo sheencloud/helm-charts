@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ include "hyperkuber.web" . }}
   labels:
-    {{- include "hyperkuber.labels" . | nindent 4 }}
+    {{- include "hyperkuber.web.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.web.service.type }}
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "hyperkuber.web" }}
+    {{- include "hyperkuber.web.selectorLabels" . | nindent 4 }}

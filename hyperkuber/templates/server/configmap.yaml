@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: "{{ template "hyperkuber.server" . }}"
   labels:
-    {{- include "hyperkuber.labels" . | nindent 4 }}
+    {{- include "hyperkuber.server.labels" . | nindent 4 }}
 data:
   config.yaml: |-
     server:

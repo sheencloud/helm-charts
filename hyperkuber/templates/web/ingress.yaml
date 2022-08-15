@@ -3,7 +3,7 @@ apiVersion: {{ template "hyperkuber.ingress.apiVersion" . }}
 kind: Ingress
 metadata:
   name: {{ template "hyperkuber.web" . }}
-  labels: {{- include "hyperkuber.labels" . | nindent 4 }}
+  labels: {{- include "hyperkuber.web.labels" . | nindent 4 }}
   annotations:
     {{- if .Values.web.ingress.annotations }}
     {{ toYaml .Values.web.ingress.annotations | indent 4 }}

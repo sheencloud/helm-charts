@@ -1,10 +1,10 @@
 ## install helm chart on openshift
 
-for example ,helm install name "hkcmp",you should 
+for example ,helm install name "hyperkuber",you should 
 ```
 oc adm policy add-scc-to-user anyuid -z hyperkuber
-oc adm policy add-scc-to-user anyuid -z hkcmp-mysql
-oc adm policy add-scc-to-user anyuid -z hkcmp-redis
+oc adm policy add-scc-to-user anyuid -z hyperkuber-mysql
+oc adm policy add-scc-to-user anyuid -z hyperkuber-redis
 ```
 
 

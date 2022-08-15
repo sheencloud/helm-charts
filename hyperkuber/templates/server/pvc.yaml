@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: {{ include "hyperkuber.server" . }}
-  labels: {{- include "hyperkuber.labels" . | nindent 4 }}
+  labels: {{- include "hyperkuber.server.labels" . | nindent 4 }}
 spec:
   accessModes:
     - {{ .Values.server.persistence.accessMode | quote }}

@@ -42,21 +42,41 @@ Create chart name and version as used by the chart label.
 {{/*
 Common labels
 */}}
-{{- define "hyperkuber.labels" -}}
+{{- define "hyperkuber.web.labels" -}}
 helm.sh/chart: {{ include "hyperkuber.chart" . }}
-{{ include "hyperkuber.selectorLabels" . }}
+{{ include "hyperkuber.web.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
 app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{- end }}
 
+
+{{/*
+Common labels
+*/}}
+{{- define "hyperkuber.server.labels" -}}
+helm.sh/chart: {{ include "hyperkuber.chart" . }}
+{{ include "hyperkuber.server.selectorLabels" . }}
+{{- if .Chart.AppVersion }}
+app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
+{{- end }}
+app.kubernetes.io/managed-by: {{ .Release.Service }}
+{{- end }}
+
+
 {{/*
 Selector labels
 */}}
-{{- define "hyperkuber.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "hyperkuber.name" . }}
-app.kubernetes.io/instance: {{ .Release.Name }}
+{{- define "hyperkuber.web.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "hyperkuber.web" . }}
+{{- end }}
+
+{{/*
+Selector labels
+*/}}
+{{- define "hyperkuber.server.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "hyperkuber.server" . }}
 {{- end }}
 
 {{/*

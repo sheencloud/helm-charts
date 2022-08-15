@@ -3,12 +3,12 @@ kind: Deployment
 metadata:
   name: {{ include "hyperkuber.web" . }}
   labels:
-    {{- include "hyperkuber.labels" . | nindent 4 }}
+    {{- include "hyperkuber.web.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      {{- include "hyperkuber.selectorLabels" . | nindent 6 }}
+      {{- include "hyperkuber.web.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.web.podAnnotations }}
@@ -16,7 +16,7 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "hyperkuber.selectorLabels" . | nindent 8 }}
+        {{- include "hyperkuber.web.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.web.imagePullSecrets }}
       imagePullSecrets:

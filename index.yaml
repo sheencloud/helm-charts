@@ -3,7 +3,7 @@ entries:
   hyperkuber:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-08-15T09:59:12.108615+08:00"
+    created: "2022-08-15T11:26:58.808187+08:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -18,77 +18,10 @@ entries:
       - redis
       version: 16.8.6
     description: A Helm chart for Kubernetes
-    digest: 983883eb0dedf7981fe54cd8c7422336b71f011ca45f6d8a07240ea5e9cb891a
+    digest: 3f1e12d4a2d95c8a44679040818513e3931c9b9507cd79ead42508e05280c02d
     name: hyperkuber
     type: application
     urls:
     - https://charts.sheencloud.com/hyperkuber-1.0.0.tgz
     version: 1.0.0
-  mysql:
-  - annotations:
-      category: Database
-    apiVersion: v2
-    appVersion: 8.0.28
-    created: "2022-08-15T09:59:12.11083+08:00"
-    dependencies:
-    - name: common
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - bitnami-common
-      version: 1.x.x
-    description: MySQL is a fast, reliable, scalable, and easy to use open source
-      relational database system. Designed to handle mission-critical, heavy-load
-      production applications.
-    digest: 94fbe07a059702f73fe77cbd31894809ddda3ef84aafe8e760e759cce1f688f8
-    home: https://github.com/bitnami/charts/tree/master/bitnami/mysql
-    icon: https://bitnami.com/assets/stacks/mysql/img/mysql-stack-220x234.png
-    keywords:
-    - mysql
-    - database
-    - sql
-    - cluster
-    - high availability
-    maintainers:
-    - email: containers@bitnami.com
-      name: Bitnami
-    name: mysql
-    sources:
-    - https://github.com/bitnami/bitnami-docker-mysql
-    - https://mysql.com
-    urls:
-    - https://charts.sheencloud.com/charts/mysql-8.8.28.tgz
-    version: 8.8.28
-  redis:
-  - annotations:
-      category: Database
-    apiVersion: v2
-    appVersion: 6.2.6
-    created: "2022-08-15T09:59:12.114487+08:00"
-    dependencies:
-    - name: common
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - bitnami-common
-      version: 1.x.x
-    description: Redis(TM) is an open source, advanced key-value store. It is often
-      referred to as a data structure server since keys can contain strings, hashes,
-      lists, sets and sorted sets.
-    digest: 5885201db82523b683c9fee12c9dc8049975814ae66e3f1bf4f3d9ccc6252dcd
-    home: https://github.com/bitnami/charts/tree/master/bitnami/redis
-    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
-    keywords:
-    - redis
-    - keyvalue
-    - database
-    maintainers:
-    - email: containers@bitnami.com
-      name: Bitnami
-    - email: cedric@desaintmartin.fr
-      name: desaintmartin
-    name: redis
-    sources:
-    - https://github.com/bitnami/bitnami-docker-redis
-    urls:
-    - https://charts.sheencloud.com/charts/redis-16.8.6.tgz
-    version: 16.8.6
-generated: "2022-08-15T09:59:12.092902+08:00"
+generated: "2022-08-15T11:26:58.799588+08:00"

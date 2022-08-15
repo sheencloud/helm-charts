@@ -3,7 +3,7 @@ entries:
   hyperkuber:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-08-15T09:46:18.460147+08:00"
+    created: "2022-08-15T09:59:12.108615+08:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -22,14 +22,14 @@ entries:
     name: hyperkuber
     type: application
     urls:
-    - https://sheencloud.github.io/charts/hyperkuber-1.0.0.tgz
+    - https://charts.sheencloud.com/hyperkuber-1.0.0.tgz
     version: 1.0.0
   mysql:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 8.0.28
-    created: "2022-08-15T09:46:18.463048+08:00"
+    created: "2022-08-15T09:59:12.11083+08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -56,14 +56,14 @@ entries:
     - https://github.com/bitnami/bitnami-docker-mysql
     - https://mysql.com
     urls:
-    - https://sheencloud.github.io/charts/charts/mysql-8.8.28.tgz
+    - https://charts.sheencloud.com/charts/mysql-8.8.28.tgz
     version: 8.8.28
   redis:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 6.2.6
-    created: "2022-08-15T09:46:18.466521+08:00"
+    created: "2022-08-15T09:59:12.114487+08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -89,6 +89,6 @@ entries:
     sources:
     - https://github.com/bitnami/bitnami-docker-redis
     urls:
-    - https://sheencloud.github.io/charts/charts/redis-16.8.6.tgz
+    - https://charts.sheencloud.com/charts/redis-16.8.6.tgz
     version: 16.8.6
-generated: "2022-08-15T09:46:18.446418+08:00"
+generated: "2022-08-15T09:59:12.092902+08:00"

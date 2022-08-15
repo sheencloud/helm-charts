@@ -3,7 +3,7 @@ entries:
   hyperkuber:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-08-15T11:26:58.808187+08:00"
+    created: "2022-08-15T21:50:30.917126+08:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -17,11 +17,11 @@ entries:
       tags:
       - redis
       version: 16.8.6
-    description: A Helm chart for Kubernetes
-    digest: 3f1e12d4a2d95c8a44679040818513e3931c9b9507cd79ead42508e05280c02d
+    description: Hyperkuber for Kubernetes and Openshift
+    digest: e1e11199d112adbcbc50d5b2a110288c5e53f81a33a3b339a1782a307f0b8973
     name: hyperkuber
     type: application
     urls:
     - https://charts.sheencloud.com/hyperkuber-1.0.0.tgz
     version: 1.0.0
-generated: "2022-08-15T11:26:58.799588+08:00"
+generated: "2022-08-15T21:50:30.907035+08:00"

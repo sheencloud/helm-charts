@@ -2,8 +2,8 @@ apiVersion: v1
 entries:
   hyperkuber:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-06-29T22:52:15.347493+08:00"
+    appVersion: 1.0.0
+    created: "2022-08-15T09:46:18.460147+08:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -18,41 +18,18 @@ entries:
       - redis
       version: 16.8.6
     description: A Helm chart for Kubernetes
-    digest: 1db84eba246d8381e993883c07b0ce9fdd792c994a7aee187efdbcaf6a345f51
+    digest: 983883eb0dedf7981fe54cd8c7422336b71f011ca45f6d8a07240ea5e9cb891a
     name: hyperkuber
     type: application
     urls:
-    - https://sheencloud.github.io/charts/hyperkuber-0.1.0.tgz
-    version: 0.1.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-06-29T22:52:15.36244+08:00"
-    dependencies:
-    - condition: mysql.enabled
-      name: mysql
-      repository: https://charts.bitnami.com/bitnami/
-      tags:
-      - mysql
-      version: 8.8.28
-    - condition: redis.enabled
-      name: redis
-      repository: https://charts.bitnami.com/bitnami/
-      tags:
-      - redis
-      version: 16.8.6
-    description: A Helm chart for Kubernetes
-    digest: 1db84eba246d8381e993883c07b0ce9fdd792c994a7aee187efdbcaf6a345f51
-    name: hyperkuber
-    type: application
-    urls:
-    - https://sheencloud.github.io/charts/hyperkuber/hyperkuber-0.1.0.tgz
-    version: 0.1.0
+    - https://sheencloud.github.io/charts/hyperkuber-1.0.0.tgz
+    version: 1.0.0
   mysql:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 8.0.28
-    created: "2022-06-29T22:52:15.350032+08:00"
+    created: "2022-08-15T09:46:18.463048+08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -86,7 +63,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.2.6
-    created: "2022-06-29T22:52:15.354436+08:00"
+    created: "2022-08-15T09:46:18.466521+08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -114,4 +91,4 @@ entries:
     urls:
     - https://sheencloud.github.io/charts/charts/redis-16.8.6.tgz
     version: 16.8.6
-generated: "2022-06-29T22:52:15.340351+08:00"
+generated: "2022-08-15T09:46:18.446418+08:00"

@@ -23,9 +23,10 @@ If release name contains chart name it will be used as a full name.
 {{- end }}
 {{- end }}
 
-{{- define "hyperkuber.portal" -}}
-  {{- printf "%s-portal" (include "hyperkuber.fullname" .) -}}
+{{- define "hyperkuber.web" -}}
+  {{- printf "%s-web" (include "hyperkuber.fullname" .) -}}
 {{- end -}}
+
 
 {{- define "hyperkuber.server" -}}
   {{- printf "%s-server" (include "hyperkuber.fullname" .) -}}
@@ -61,11 +62,11 @@ app.kubernetes.io/instance: {{ .Release.Name }}
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "hyperkuber.portal.serviceAccountName" -}}
-{{- if .Values.portal.serviceAccount.create }}
-{{- default (include "hyperkuber.portal" .) .Values.portal.serviceAccount.name }}
+{{- define "hyperkuber.web.serviceAccountName" -}}
+{{- if .Values.web.serviceAccount.create }}
+{{- default (include "hyperkuber.web" .) .Values.web.serviceAccount.name }}
 {{- else }}
-{{- default "default" .Values.portal.serviceAccount.name }}
+{{- default "default" .Values.web.serviceAccount.name }}
 {{- end }}
 {{- end }}
 

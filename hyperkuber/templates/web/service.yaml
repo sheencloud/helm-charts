@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "hyperkuber.selectorLabels" . | nindent 4 }}
+    {{- include "hyperkuber.web" }}

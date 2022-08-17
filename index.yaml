@@ -3,6 +3,29 @@ entries:
   hyperkuber:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-08-17T08:02:13.367885603Z"
+    dependencies:
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://charts.bitnami.com/bitnami/
+      tags:
+      - mysql
+      version: 8.8.28
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami/
+      tags:
+      - redis
+      version: 16.8.6
+    description: Hyperkuber for Kubernetes and Openshift
+    digest: 3ac6bcaf10f90c701b208177962f5710141005e11d48ef2a05316aab561200b2
+    name: hyperkuber
+    type: application
+    urls:
+    - https://github.com/sheencloud/helm-charts/releases/download/hyperkuber-1.0.1/hyperkuber-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-08-17T15:40:34.41661+08:00"
     dependencies:
     - condition: mysql.enabled
@@ -24,4 +47,4 @@ entries:
     urls:
     - https://charts.sheencloud.com/hyperkuber-1.0.0.tgz
     version: 1.0.0
-generated: "2022-08-17T15:40:34.405458+08:00"
+generated: "2022-08-17T08:02:13.367902003Z"
